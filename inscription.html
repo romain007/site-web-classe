@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <h1 class="titre_inscription">INSCRIPTION</h1>
+  <form id="myForm" class="myForm">
+    <br><br>
+    Le lien de votre projet : <input class="zone_text" type="text" name="lien">
+    <br><br>
+    Le sujet de votre projet : <input class="zone_text" type="text" name="sujet">
+    <br><br>
+    <button type="submit" class="boutton_formulaire">Envoyer</button>
+  </form>
+
+
+  <script>
+    const form = document.getElementById('myForm');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Empêcher l'envoi du formulaire
+
+      const formData = new FormData(form);
+
+      // Récupérer les valeurs des champs
+      const lien = formData.get('lien');
+      const sujet = formData.get('sujet');
+      const description = formData.get('description');
+      update_data(lien, sujet);
+      form.reset();
+      // Effectuer d'autres actions avec les données du formulaire
+    });
+  </script>

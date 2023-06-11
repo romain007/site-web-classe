@@ -1,0 +1,177 @@
+/* Police d'écriture */
+@font-face {
+	font-family: 'titre';
+    src: url('font/police.ttf') format('truetype')
+
+}
+
+/* Affichage de la page d'aceuill */
+.cont {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-image: url("image/fond.png");
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  transition: all ease-in-out 1s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* Permet de cacheren dessous*/
+.fade-out {
+  opacity: 0;
+}
+
+/* Permet de faire une transition avec un effet de fondu*/
+.page {
+  transition: all ease-in-out 500ms;
+}
+
+/* Image de la fléche*/
+.img {
+  width :10%;
+  height:10%;
+  margin: 10px;
+}
+
+/*Fais descendre l'image*/
+.down {
+  transform: translateY(0);
+}
+/* Cache ce qu'il y a sous l'image*/
+.none{
+  display: none;
+}
+/* Fais monter l'image*/
+.up {
+  transform: translateY(-90%);
+}
+
+/* Titre votez pour votre préferez*/
+.titre{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'titre';
+}
+
+/* Affichage des votes */
+.titre2{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'titre';
+  margin-left: 41%;
+
+}
+
+/*Bouton pour s'inscrire*/
+.inscription{
+  height: 80px;
+  width: 200px;
+  margin-right: 80px;
+}
+/*Bouton pour s'inscrire*/
+.titre_bouton{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+/* Article Tableau */
+.article{
+    margin-top: 5%;
+    font-size: 20px;
+    font-family: 'titre';
+}
+
+/* Tableau */
+table {
+	  border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+/* Première ligne du tableau*/
+.title_table{
+
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'titre';
+
+}
+
+/* Lignes des tableaux en noir */
+tr td {
+  border: 1px solid black;
+}
+
+tr td:first-child {
+  font-size: 40px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #e6e6e6;
+  border: 1px solid black;
+}
+/*Bouton des votes*/
+button {
+	background-color: #25bb07;
+	color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+	border: none;
+	padding: 15px;
+	cursor: pointer;
+  font-family: 'titre';
+}
+
+/* Pied de page */
+footer {
+  background-color: #333333;
+  border-radius: solid red;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 1000px;
+}
+
+/* Formulaire de la page pour s'inscrire */
+.myForm{
+  margin-top:0%;
+  text-align:left;
+  font-family: 'titre';
+  font-size:50px;
+}
+/* Zone de texte pour le formulaire */
+.zone_text{
+  width:200px;
+  height:50px;
+}
+
+.description{
+  width:600px;
+  height:70px;
+}
+
+.titre_inscription{
+  text-align:center;
+  font-family: 'titre';
+  font-size: 90px;
+}
+
+
+.boutton_formulaire{
+  width: 150px;
+  height: 65px;
+  margin-left:1%;
+}
+
